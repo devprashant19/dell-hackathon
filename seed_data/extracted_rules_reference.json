@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "description": "Canonical ground-truth compatibility rules that SHOULD be extracted from the 4 sample PDFs in this fixture set. Use this to validate/score the LLM extraction pipeline's output (precision/recall against this reference) and to seed the knowledge graph directly if you want to demo scoring before the extraction pipeline is fully built.",
+  "rules": [
+    {
+      "rule_id": "RULE-001",
+      "source_doc": "DELL-BIOS-Compatibility-Matrix-2026-Q1.pdf",
+      "source_page": 1,
+      "subject_component": { "type": "bios", "name": "Dell OptiPlex 7000 BIOS", "version_constraint": ">=2.16.0" },
+      "depends_on": [{ "type": "tpm_firmware", "name": "TPM Firmware", "version_constraint": ">=7.2.3" }],
+      "conflicts_with": [],
+      "rule_type": "requires",
+      "confidence": 0.97,
+      "raw_excerpt": "Systems must be running TPM firmware 7.2.3 or later prior to applying this BIOS version.",
+      "ambiguous": false,
+      "extraction_notes": "Clear hard requirement with explicit version and explicit failure mode (DCU-0x442 rejection)."
+    },
+    {
+      "rule_id": "RULE-002",
+      "source_doc": "DELL-BIOS-Compatibility-Matrix-2026-Q1.pdf",
+      "source_page": 1,
+      "subject_component": { "type": "bios", "name": "Dell OptiPlex 7000 BIOS", "version_constraint": ">=2.16.0" },
+      "depends_on": [],
+      "conflicts_with": [{ "type": "nic_firmware", "name": "Intel I219-LM NIC Firmware", "version_constraint": "<23.0" }],
+      "rule_type": "conflicts",
+      "confidence": 0.98,
+      "raw_excerpt": "BIOS 2.16.0 and later enable a revised Secure Boot certificate chain that is incompatible with Intel I219-LM NIC firmware versions below 23.0.",
+      "ambiguous": false,
+      "extraction_notes": "Explicitly labeled a hard blocking dependency in the document, not a recommendation. Severity: Critical per source table."
+    },
+    {
+      "rule_id": "RULE-003",
+      "source_doc": "DELL-BIOS-Compatibility-Matrix-2026-Q1.pdf",
+      "source_page": 2,
+      "subject_component": { "type": "driver", "name": "Intel Chipset INF Driver", "version_constraint": ">=10.1.45" },
+      "depends_on": [{ "type": "bios", "name": "Dell OptiPlex 7000 BIOS", "version_constraint": "==2.17.1" }],
+      "conflicts_with": [],
+      "rule_type": "recommended",
+      "confidence": 0.55,
+      "raw_excerpt": "Customers running BIOS 2.17.1 are advised to consider upgrading the Intel chipset INF driver to 10.1.45 or later for optimal power-management telemetry reporting.",
+      "ambiguous": true,
+      "extraction_notes": "AMBIGUOUS — soft advisory language ('advised to consider') with explicit statement that 'no functional issues have been reported' on earlier versions. This is a candidate for the Human-in-the-Loop review queue: should be classified as 'recommended' not 'requires', and reviewers should confirm it should not be weighted as a compliance-affecting violation."
+    },
+    {
+      "rule_id": "RULE-004",
+      "source_doc": "DELL-BIOS-Compatibility-Matrix-2026-Q1.pdf",
+      "source_page": 2,
+      "subject_component": { "type": "bios", "name": "Dell OptiPlex 7000 BIOS", "version_constraint": "*" },
+      "depends_on": [],
+      "conflicts_with": [],
+      "rule_type": "deprecated",
+      "confidence": 0.2,
+      "raw_excerpt": "Footnote reference [1] — see Appendix A. [Continued from prior internal revision; full footnote text intentionally withheld pending legal review...]",
+      "ambiguous": true,
+      "extraction_notes": "AMBIGUOUS / LOW CONFIDENCE — footnote referenced in body text but its substantive content is withheld in Appendix A. Extraction pipeline cannot determine what rule (if any) this footnote actually encodes. MUST route to review queue with a flag like 'incomplete source content' rather than guessing. Good test case for confidence-gating."
+    },
+    {
+      "rule_id": "RULE-005",
+      "source_doc": "CrowdStrike-Falcon-Sensor-7.18-Release-Notes.pdf",
+      "source_page": 1,
+      "subject_component": { "type": "agent", "name": "CrowdStrike Falcon Sensor", "version_constraint": ">=7.18.0" },
+      "depends_on": [{ "type": "os", "name": "Windows 11 24H2", "version_constraint": ">=26100.0" }],
+      "conflicts_with": [],
+      "rule_type": "requires",
+      "confidence": 0.85,
+      "raw_excerpt": "The new kernel callback model used for credential access detection in this release REQUIRES Windows 11 24H2 (build 26100.0) or later.",
+      "ambiguous": false,
+      "extraction_notes": "Worded as a hard REQUIRES in caps, BUT the document also says sensors on older OS 'automatically fall back' rather than failing outright. Extraction should capture this as a 'requires for full feature set' rule (soft-degrade, not hard-block) — recommend a sub-type or a metadata flag 'degrades_silently_if_unmet': true rather than treating identically to a hard block like RULE-002. This nuance is a good design discussion point for the scoring engine's severity weighting."
+    },
+    {
+      "rule_id": "RULE-006",
+      "source_doc": "CrowdStrike-Falcon-Sensor-7.18-Release-Notes.pdf",
+      "source_page": 1,
+      "subject_component": { "type": "agent", "name": "CrowdStrike Falcon Sensor", "version_constraint": "<=6.999" },
+      "depends_on": [],
+      "conflicts_with": [],
+      "rule_type": "deprecated",
+      "confidence": 0.4,
+      "raw_excerpt": "Support for the legacy user-mode-only sensor architecture (used by Falcon Sensor versions 6.x and earlier) will be deprecated in an upcoming release.",
+      "ambiguous": true,
+      "extraction_notes": "AMBIGUOUS — no concrete version or date for the deprecation ('an upcoming release', 'has not yet been finalized'). Extraction should NOT invent a specific cutoff version. Route to review queue; until a human or a follow-up bulletin supplies a concrete version, this should be stored as an advisory-only deprecation notice with no enforceable constraint."
+    },
+    {
+      "rule_id": "RULE-007",
+      "source_doc": "Tanium-Client-7.5-Compatibility-Bulletin.pdf",
+      "source_page": 1,
+      "subject_component": { "type": "agent", "name": "Tanium Client", "version_constraint": ">=7.4.6" },
+      "depends_on": [],
+      "conflicts_with": [{ "type": "agent", "name": "CrowdStrike Falcon Sensor", "version_constraint": ">=7.18.0" }],
+      "rule_type": "conflicts",
+      "confidence": 0.93,
+      "raw_excerpt": "Tanium Client versions prior to 7.4.6 are not validated against Falcon Sensor 7.18.x's revised kernel filter altitude allocation and MUST be upgraded to 7.4.6 or later before Falcon Sensor 7.18.x is deployed to the same endpoint.",
+      "ambiguous": false,
+      "extraction_notes": "Note the direction: this is really 'Tanium Client < 7.4.6' CONFLICTS_WITH 'Falcon Sensor >= 7.18.0'. Represent as a symmetric conflict edge in the graph (either component triggers the check). MUST-level language, not advisory."
+    },
+    {
+      "rule_id": "RULE-008",
+      "source_doc": "Tanium-Client-7.5-Compatibility-Bulletin.pdf",
+      "source_page": 1,
+      "subject_component": { "type": "agent", "name": "Tanium Client", "version_constraint": ">=7.5.0" },
+      "depends_on": [{ "type": "os", "name": "Windows 11 25H2", "version_constraint": ">=27000.0" }],
+      "conflicts_with": [],
+      "rule_type": "requires",
+      "confidence": 0.75,
+      "raw_excerpt": "Windows 11 25H2 ... Tanium Client 7.4.x: Not validated / Tanium Client 7.5.x: Supported",
+      "ambiguous": false,
+      "extraction_notes": "Extracted from the OS support table, not prose — 'Not validated' should map to rule_type 'requires' (i.e., 7.5.x effectively required for 25H2) rather than 'conflicts', since the document doesn't say 7.4.x actively breaks on 25H2, only that it's unvalidated. This is a judgment call worth flagging for reviewer confirmation even though confidence is reasonably high."
+    },
+    {
+      "rule_id": "RULE-009",
+      "source_doc": "Intel-I219-NIC-Firmware-Advisory-23.0.pdf",
+      "source_page": 1,
+      "subject_component": { "type": "firmware", "name": "Intel I219-LM NIC Firmware", "version_constraint": ">=23.0" },
+      "depends_on": [{ "type": "driver", "name": "Intel Chipset INF Driver", "version_constraint": ">=10.1.40" }],
+      "conflicts_with": [],
+      "rule_type": "requires",
+      "confidence": 0.9,
+      "raw_excerpt": "Firmware 23.0 requires chipset INF driver 10.1.40 or later.",
+      "ambiguous": false,
+      "extraction_notes": "Clear hard requirement, directly stated."
+    },
+    {
+      "rule_id": "RULE-010",
+      "source_doc": "Intel-I219-NIC-Firmware-Advisory-23.0.pdf",
+      "source_page": 1,
+      "subject_component": { "type": "firmware", "name": "Intel I219-LM NIC Firmware", "version_constraint": "<23.0" },
+      "depends_on": [],
+      "conflicts_with": [{ "type": "bios", "name": "Dell OptiPlex 7000 BIOS", "version_constraint": ">=2.16.0" }],
+      "rule_type": "conflicts",
+      "confidence": 0.96,
+      "raw_excerpt": "Systems applying OEM BIOS updates that introduce the revised Secure Boot certificate chain ... MUST have NIC firmware 23.0 or later installed beforehand.",
+      "ambiguous": false,
+      "extraction_notes": "This is the SAME underlying rule as RULE-002, extracted independently from a second, corroborating source document (Intel's advisory cross-references the Dell document by name: 'Dell BIOS 2.16.0 and later per Dell document DCM-2026-Q1-117'). The extraction pipeline should detect this as a duplicate/corroborating rule (same subject+conflict pair) and merge it into a single graph edge with both source documents listed in provenance, rather than creating two redundant edges. This is an important dedup test case."
+    }
+  ],
+  "deliberately_excluded_from_extraction": [
+    {
+      "note": "The CrowdStrike known-issues table (FAL-2026-0091, FAL-2026-0103) describes BUGS, not compatibility/version constraints. A well-tuned extraction prompt should NOT turn these into compatibility rules — they belong in a separate 'known issues' bucket, if captured at all. Good negative test case to confirm the extraction pipeline isn't over-eager."
+    },
+    {
+      "note": "The Tanium 'Recommended Upgrade Sequencing' numbered list (steps 1-4) is a procedural runbook, not a standalone compatibility rule — its content is already captured by RULE-007. Extracting it as a separate rule would be redundant."
+    }
+  ]
+}

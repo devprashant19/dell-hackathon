@@ -1,0 +1,2557 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-06-18T15:00:00Z",
+  "device_count": 75,
+  "devices": [
+    {
+      "device_id": "DV-0001",
+      "hostname": "WKS-0001",
+      "site": "HQ-Austin",
+      "department": "Engineering",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0002",
+      "hostname": "WKS-0002",
+      "site": "HQ-Dehradun",
+      "department": "Finance",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0003",
+      "hostname": "WKS-0003",
+      "site": "HQ-Austin",
+      "department": "Engineering",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0004",
+      "hostname": "WKS-0004",
+      "site": "Remote-WFH",
+      "department": "IT Operations",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0005",
+      "hostname": "WKS-0005",
+      "site": "HQ-Dehradun",
+      "department": "Customer Support",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0006",
+      "hostname": "WKS-0006",
+      "site": "Branch-Chicago",
+      "department": "Engineering",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0007",
+      "hostname": "WKS-0007",
+      "site": "Remote-WFH",
+      "department": "Sales",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0008",
+      "hostname": "WKS-0008",
+      "site": "HQ-Austin",
+      "department": "Legal",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0009",
+      "hostname": "WKS-0009",
+      "site": "HQ-Austin",
+      "department": "Engineering",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0010",
+      "hostname": "WKS-0010",
+      "site": "HQ-Austin",
+      "department": "IT Operations",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0011",
+      "hostname": "WKS-0011",
+      "site": "Branch-Chicago",
+      "department": "Finance",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0012",
+      "hostname": "WKS-0012",
+      "site": "Remote-WFH",
+      "department": "IT Operations",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.15.2"
+        },
+        "tpm_firmware": {
+          "version": "7.2.1"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0013",
+      "hostname": "WKS-0013",
+      "site": "Branch-Singapore",
+      "department": "Legal",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0014",
+      "hostname": "WKS-0014",
+      "site": "Remote-WFH",
+      "department": "Sales",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.1"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.5"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0015",
+      "hostname": "WKS-0015",
+      "site": "Remote-WFH",
+      "department": "Finance",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.14.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.5"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0016",
+      "hostname": "WKS-0016",
+      "site": "HQ-Austin",
+      "department": "Engineering",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0017",
+      "hostname": "WKS-0017",
+      "site": "Remote-WFH",
+      "department": "Finance",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0018",
+      "hostname": "WKS-0018",
+      "site": "Branch-Singapore",
+      "department": "Customer Support",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0019",
+      "hostname": "WKS-0019",
+      "site": "Remote-WFH",
+      "department": "Legal",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0020",
+      "hostname": "WKS-0020",
+      "site": "Branch-Chicago",
+      "department": "Engineering",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0021",
+      "hostname": "WKS-0021",
+      "site": "Branch-Singapore",
+      "department": "Finance",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0022",
+      "hostname": "WKS-0022",
+      "site": "HQ-Austin",
+      "department": "IT Operations",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0023",
+      "hostname": "WKS-0023",
+      "site": "Branch-Chicago",
+      "department": "IT Operations",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0024",
+      "hostname": "WKS-0024",
+      "site": "Branch-Singapore",
+      "department": "IT Operations",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0025",
+      "hostname": "WKS-0025",
+      "site": "Branch-Chicago",
+      "department": "IT Operations",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0026",
+      "hostname": "WKS-0026",
+      "site": "Branch-Chicago",
+      "department": "Engineering",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0027",
+      "hostname": "WKS-0027",
+      "site": "HQ-Dehradun",
+      "department": "IT Operations",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0028",
+      "hostname": "WKS-0028",
+      "site": "Remote-WFH",
+      "department": "Legal",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.1"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0029",
+      "hostname": "WKS-0029",
+      "site": "HQ-Austin",
+      "department": "Engineering",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0030",
+      "hostname": "WKS-0030",
+      "site": "HQ-Austin",
+      "department": "Finance",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0031",
+      "hostname": "WKS-0031",
+      "site": "Remote-WFH",
+      "department": "Customer Support",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.14.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0032",
+      "hostname": "WKS-0032",
+      "site": "Remote-WFH",
+      "department": "Finance",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0033",
+      "hostname": "WKS-0033",
+      "site": "Branch-Chicago",
+      "department": "Engineering",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0034",
+      "hostname": "WKS-0034",
+      "site": "HQ-Austin",
+      "department": "Customer Support",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0035",
+      "hostname": "WKS-0035",
+      "site": "Branch-Chicago",
+      "department": "Sales",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0036",
+      "hostname": "WKS-0036",
+      "site": "Remote-WFH",
+      "department": "IT Operations",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.15.2"
+        },
+        "tpm_firmware": {
+          "version": "7.2.1"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.1"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.30"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0037",
+      "hostname": "WKS-0037",
+      "site": "Branch-Singapore",
+      "department": "Customer Support",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.15.2"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.1"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0038",
+      "hostname": "WKS-0038",
+      "site": "HQ-Dehradun",
+      "department": "IT Operations",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.1"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.1"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.30"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0039",
+      "hostname": "WKS-0039",
+      "site": "Remote-WFH",
+      "department": "Sales",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0040",
+      "hostname": "WKS-0040",
+      "site": "Branch-Chicago",
+      "department": "Customer Support",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0041",
+      "hostname": "WKS-0041",
+      "site": "HQ-Austin",
+      "department": "Legal",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0042",
+      "hostname": "WKS-0042",
+      "site": "HQ-Dehradun",
+      "department": "Sales",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.5"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0043",
+      "hostname": "WKS-0043",
+      "site": "HQ-Dehradun",
+      "department": "Customer Support",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.15.2"
+        },
+        "tpm_firmware": {
+          "version": "7.2.1"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0044",
+      "hostname": "WKS-0044",
+      "site": "Remote-WFH",
+      "department": "Customer Support",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.1"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0045",
+      "hostname": "WKS-0045",
+      "site": "Branch-Singapore",
+      "department": "IT Operations",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.1"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0046",
+      "hostname": "WKS-0046",
+      "site": "HQ-Austin",
+      "department": "Finance",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0047",
+      "hostname": "WKS-0047",
+      "site": "Branch-Singapore",
+      "department": "Sales",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.5"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.30"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0048",
+      "hostname": "WKS-0048",
+      "site": "Remote-WFH",
+      "department": "Customer Support",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.14.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.1"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.1"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.30"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0049",
+      "hostname": "WKS-0049",
+      "site": "Branch-Chicago",
+      "department": "Legal",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0050",
+      "hostname": "WKS-0050",
+      "site": "Branch-Singapore",
+      "department": "Customer Support",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0051",
+      "hostname": "WKS-0051",
+      "site": "Branch-Singapore",
+      "department": "Legal",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0052",
+      "hostname": "WKS-0052",
+      "site": "Branch-Chicago",
+      "department": "Legal",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0053",
+      "hostname": "WKS-0053",
+      "site": "HQ-Dehradun",
+      "department": "Engineering",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0054",
+      "hostname": "WKS-0054",
+      "site": "HQ-Dehradun",
+      "department": "Finance",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0055",
+      "hostname": "WKS-0055",
+      "site": "HQ-Dehradun",
+      "department": "Customer Support",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.2.1"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.30"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0056",
+      "hostname": "WKS-0056",
+      "site": "Branch-Singapore",
+      "department": "Legal",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.5"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.30"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0057",
+      "hostname": "WKS-0057",
+      "site": "Branch-Chicago",
+      "department": "IT Operations",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0058",
+      "hostname": "WKS-0058",
+      "site": "HQ-Dehradun",
+      "department": "IT Operations",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0059",
+      "hostname": "WKS-0059",
+      "site": "HQ-Austin",
+      "department": "Finance",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0060",
+      "hostname": "WKS-0060",
+      "site": "Branch-Singapore",
+      "department": "Engineering",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.5"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0061",
+      "hostname": "WKS-0061",
+      "site": "Branch-Singapore",
+      "department": "Sales",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0062",
+      "hostname": "WKS-0062",
+      "site": "Remote-WFH",
+      "department": "Legal",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0063",
+      "hostname": "WKS-0063",
+      "site": "Branch-Singapore",
+      "department": "Sales",
+      "model": "Dell OptiPlex 7020",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0064",
+      "hostname": "WKS-0064",
+      "site": "Branch-Chicago",
+      "department": "IT Operations",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.14.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.1"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0065",
+      "hostname": "WKS-0065",
+      "site": "HQ-Dehradun",
+      "department": "Engineering",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0066",
+      "hostname": "WKS-0066",
+      "site": "Branch-Chicago",
+      "department": "Finance",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.5.0",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0067",
+      "hostname": "WKS-0067",
+      "site": "Branch-Chicago",
+      "department": "Engineering",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.14.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0068",
+      "hostname": "WKS-0068",
+      "site": "Remote-WFH",
+      "department": "Engineering",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.16.0"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 23H2",
+          "build": "22631.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0069",
+      "hostname": "WKS-0069",
+      "site": "HQ-Austin",
+      "department": "IT Operations",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.18.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0070",
+      "hostname": "WKS-0070",
+      "site": "Remote-WFH",
+      "department": "Sales",
+      "model": "Dell OptiPlex 7010",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0071",
+      "hostname": "WKS-0071",
+      "site": "Branch-Singapore",
+      "department": "Legal",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "22.1"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 11 24H2",
+          "build": "26100.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0072",
+      "hostname": "WKS-0072",
+      "site": "Remote-WFH",
+      "department": "Engineering",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0073",
+      "hostname": "WKS-0073",
+      "site": "Remote-WFH",
+      "department": "Finance",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.40"
+        },
+        "operating_system": {
+          "name": "Windows 10 22H2",
+          "build": "19045.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.2",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0074",
+      "hostname": "WKS-0074",
+      "site": "Branch-Singapore",
+      "department": "Legal",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.2.3"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.17.0",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.3.1"
+        }
+      }
+    },
+    {
+      "device_id": "DV-0075",
+      "hostname": "WKS-0075",
+      "site": "HQ-Dehradun",
+      "department": "Engineering",
+      "model": "Dell Latitude 5450",
+      "last_checkin": "2026-06-18T14:32:00Z",
+      "components": {
+        "bios": {
+          "vendor": "Dell",
+          "version": "2.17.1"
+        },
+        "tpm_firmware": {
+          "version": "7.3.0"
+        },
+        "nic_firmware": {
+          "name": "Intel I219-LM",
+          "version": "23.0"
+        },
+        "chipset_driver": {
+          "name": "Intel INF",
+          "version": "10.1.45"
+        },
+        "operating_system": {
+          "name": "Windows 11 25H2",
+          "build": "27000.0"
+        },
+        "endpoint_agents": {
+          "crowdstrike_falcon": "7.16.2",
+          "tanium_client": "7.4.6",
+          "dell_command_update": "5.2.0"
+        }
+      }
+    }
+  ]
+}
