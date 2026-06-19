@@ -9,8 +9,9 @@ def score_device(device_id: str) -> Dict[str, Any]:
         # 1. Check missing REQUIRES
         req_query = """
         MATCH (d:Device {device_id: $device_id})-[:RUNS_ON]->(c1:Component)-[:SUBJECT_OF]->(r:Rule)-[:REQUIRES]->(req_c:Component)
-        WHERE NOT (d)-[:RUNS_ON]->(req_c)
-        RETURN c1.name AS subject, req_c.name AS missing_requirement, req_c.version AS expected_version, r
+        WITH d, c1, r, collect(req_c) AS required_comps
+        WHERE size([c IN required_comps WHERE (d)-[:RUNS_ON]->(c)]) = 0
+        RETURN c1.name AS subject, required_comps[0].name AS missing_requirement, required_comps[0].version AS expected_version, r
         """
         req_res = session.run(req_query, device_id=device_id)
         for record in req_res:
