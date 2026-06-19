@@ -1,9 +1,72 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
-  body {
-    @apply bg-slate-900 text-slate-50 min-h-screen antialiased;
+  :root {
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-bg: rgba(15, 23, 42, 0.6);
   }
+
+  body {
+    @apply bg-slate-950 text-slate-50 min-h-screen antialiased overflow-x-hidden;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.2);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.4);
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-slate-900/40 backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+  
+  .glass-card {
+    @apply bg-slate-800/40 backdrop-blur-lg border border-white/5 shadow-xl hover:bg-slate-800/60 transition-all duration-300;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+  }
+  
+  .text-glow-emerald {
+    text-shadow: 0 0 20px rgba(52, 211, 153, 0.5);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) scale(1); opacity: 0.5; }
+  50% { transform: translateY(-20px) scale(1.05); opacity: 0.7; }
+  100% { transform: translateY(0px) scale(1); opacity: 0.5; }
+}
+
+@keyframes pulse-slow {
+  0% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.4; }
+}
+
+.animate-float {
+  animation: float 15s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 18s ease-in-out infinite;
+  animation-delay: -5s;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
 }
