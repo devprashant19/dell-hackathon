@@ -30,10 +30,12 @@ def suggest_remediation(violation: dict, device_id: str) -> List[Dict[str, Any]]
             # Find all rules that target_comp might violate with existing components
             sim_query = """
             MATCH (d:Device {device_id: $device_id})-[:RUNS_ON]->(existing:Component)
-            MATCH (r:Rule)-[:CONFLICTS_WITH]->(existing)
             MATCH (c_target:Component {name: $target_comp})
-            WHERE (c_target)-[:SUBJECT_OF]->(r)
-            RETURN existing.name AS conflict_with, r.rule_id AS rule_id
+            OPTIONAL MATCH (c_target)-[:SUBJECT_OF]->(r1:Rule)-[:CONFLICTS_WITH]->(existing)
+            OPTIONAL MATCH (existing)-[:SUBJECT_OF]->(r2:Rule)-[:CONFLICTS_WITH]->(c_target)
+            WITH existing, r1, r2
+            WHERE r1 IS NOT NULL OR r2 IS NOT NULL
+            RETURN existing.name AS conflict_with
             """
             res = session.run(sim_query, device_id=device_id, target_comp=target_comp)
             conflicts = [record["conflict_with"] for record in res]

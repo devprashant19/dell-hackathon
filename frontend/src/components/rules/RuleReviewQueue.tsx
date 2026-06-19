@@ -8,6 +8,7 @@ interface Rule {
   confidence: number;
   ambiguous: boolean;
   raw_excerpt: string;
+  extraction_notes?: string;
 }
 
 export function RuleReviewQueue() {
@@ -86,6 +87,12 @@ export function RuleReviewQueue() {
               <div className="bg-slate-900/50 p-3 rounded border border-slate-700 text-sm text-slate-300 italic font-mono text-xs">
                 "{rule.raw_excerpt}"
               </div>
+              
+              {rule.extraction_notes && (
+                <div className="bg-amber-900/20 p-2 rounded border border-amber-700/50 text-amber-200 text-xs mt-1">
+                  <strong>Notes:</strong> {rule.extraction_notes}
+                </div>
+              )}
 
               <div className="flex justify-end gap-2 mt-2">
                 <button 
