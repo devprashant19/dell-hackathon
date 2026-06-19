@@ -105,8 +105,12 @@ def init_db():
             # Find matching subject components
             subj = rule["subject_component"]
             for comp in concrete_components:
-                # Naive name match for demo, but typically type and name
-                if comp[0] == subj["type"] and matches_constraint(comp[2], subj["version_constraint"]):
+                # Require name match for agents to prevent cross-pollination
+                name_match = True
+                if comp[0] == "agent":
+                    name_match = comp[1] == subj.get("name")
+                    
+                if comp[0] == subj["type"] and name_match and matches_constraint(comp[2], subj["version_constraint"]):
                     session.run(
                         "MATCH (c:Component {type: $t, name: $n, version: $v}), (r:Rule {rule_id: $rid}) MERGE (c)-[:SUBJECT_OF]->(r)",
                         t=comp[0], n=comp[1], v=comp[2], rid=rule["rule_id"]
@@ -115,7 +119,11 @@ def init_db():
             # Requires
             for dep in (rule.get("depends_on") or []):
                 for comp in concrete_components:
-                    if comp[0] == dep["type"] and matches_constraint(comp[2], dep["version_constraint"]):
+                    name_match = True
+                    if comp[0] == "agent":
+                        name_match = comp[1] == dep.get("name")
+                        
+                    if comp[0] == dep["type"] and name_match and matches_constraint(comp[2], dep["version_constraint"]):
                         session.run(
                             "MATCH (c:Component {type: $t, name: $n, version: $v}), (r:Rule {rule_id: $rid}) MERGE (r)-[:REQUIRES]->(c)",
                             t=comp[0], n=comp[1], v=comp[2], rid=rule["rule_id"]
@@ -124,7 +132,11 @@ def init_db():
             # Conflicts
             for conf in (rule.get("conflicts_with") or []):
                 for comp in concrete_components:
-                    if comp[0] == conf["type"] and matches_constraint(comp[2], conf["version_constraint"]):
+                    name_match = True
+                    if comp[0] == "agent":
+                        name_match = comp[1] == conf.get("name")
+                        
+                    if comp[0] == conf["type"] and name_match and matches_constraint(comp[2], conf["version_constraint"]):
                         session.run(
                             "MATCH (c:Component {type: $t, name: $n, version: $v}), (r:Rule {rule_id: $rid}) MERGE (r)-[:CONFLICTS_WITH]->(c)",
                             t=comp[0], n=comp[1], v=comp[2], rid=rule["rule_id"]

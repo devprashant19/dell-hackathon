@@ -26,6 +26,7 @@ services:
     volumes:
       - ./backend:/app
       - ./seed_data:/seed_data
+      - ../files:/files
     depends_on:
       - neo4j
 
