@@ -36,6 +36,11 @@ def extract_rules_mock() -> List[RuleDef]:
                 else:
                     r["degrades_silently_if_unmet"] = False
 
+                # Fix RULE-007 logic error hallucinated by LLM, per extraction notes
+                if r.get("rule_id") == "RULE-007":
+                    if r.get("subject_component"):
+                        r["subject_component"]["version_constraint"] = "<7.4.6"
+
                 subj = r.get("subject_component", {})
                 subj_str = f"{subj.get('type')}::{subj.get('name')}::{subj.get('version_constraint')}"
                 
