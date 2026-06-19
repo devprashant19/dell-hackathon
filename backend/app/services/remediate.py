@@ -22,7 +22,7 @@ def suggest_remediation(violation: dict, device_id: str) -> List[Dict[str, Any]]
                 "simulated_score_after": f"+{violation.get('penalty', 40)} points"
             })
             
-        elif v_type == "MISSING_REQUIREMENT":
+        elif v_type == "MISSING_REQUIREMENT" or v_type == "DEGRADED_PERFORMANCE":
             target_comp = violation.get("missing")
             expected_ver = violation.get("expected")
             

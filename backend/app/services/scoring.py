@@ -15,17 +15,22 @@ def score_device(device_id: str) -> Dict[str, Any]:
         req_res = session.run(req_query, device_id=device_id)
         for record in req_res:
             rule = dict(record["r"])
+            is_silent = rule.get("degrades_silently_if_unmet", False)
+            penalty = 10 if is_silent else 30
+            v_type = "DEGRADED_PERFORMANCE" if is_silent else "MISSING_REQUIREMENT"
+            expl_prefix = "Performance Degraded" if is_silent else "Missing Requirement"
+            
             violations.append({
-                "type": "MISSING_REQUIREMENT",
+                "type": v_type,
                 "subject": record["subject"],
                 "missing": record["missing_requirement"],
                 "expected": record["expected_version"],
                 "rule_id": rule.get("rule_id"),
                 "source_doc": rule.get("source_doc"),
-                "penalty": 30,
-                "explanation": f"Missing Requirement: {record['subject']} requires {record['missing_requirement']}. [Source: {rule.get('source_doc')}, page {rule.get('source_page', 'N/A')} - Rule {rule.get('rule_id')}]"
+                "penalty": penalty,
+                "explanation": f"{expl_prefix}: {record['subject']} requires {record['missing_requirement']}. [Source: {rule.get('source_doc')}, page {rule.get('source_page', 'N/A')} - Rule {rule.get('rule_id')}]"
             })
-            score -= 30
+            score -= penalty
 
         # 2. Check 1-hop, 2-hop, 3-hop CONFLICTS
         # 1-hop

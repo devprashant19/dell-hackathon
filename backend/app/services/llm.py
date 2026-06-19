@@ -6,6 +6,7 @@ from typing import List, Optional
 class ComponentDef(BaseModel):
     type: str
     name: str
+
 class RuleDef(BaseModel):
     rule_id: str
     source_doc: str
@@ -15,6 +16,10 @@ class RuleDef(BaseModel):
     subject_component: dict
     depends_on: List[dict] = []
     conflicts_with: List[dict] = []
+    raw_excerpt: str = ""
+    ambiguous: bool = False
+    extraction_notes: str = ""
+    degrades_silently_if_unmet: bool = False
 
 def extract_rules_mock() -> List[RuleDef]:
     file_path = os.path.join(os.path.dirname(__file__), "../../../../files/extracted_rules_reference.json")
@@ -23,23 +28,36 @@ def extract_rules_mock() -> List[RuleDef]:
             data = json.load(f)
             raw_rules = data.get("rules", [])
             
-            # Deduplicate by (subject, conflict) signature
             merged_rules = {}
             for r in raw_rules:
-                subj = r["subject_component"]
-                subj_sig = f"{subj['type']}::{subj['name']}::{subj['version_constraint']}"
+                # Add the degrades_silently_if_unmet flag if it's RULE-005 as described in the notes
+                if r.get("rule_id") == "RULE-005":
+                    r["degrades_silently_if_unmet"] = True
+                else:
+                    r["degrades_silently_if_unmet"] = False
+
+                subj = r.get("subject_component", {})
+                subj_str = f"{subj.get('type')}::{subj.get('name')}::{subj.get('version_constraint')}"
                 
-                # We'll create a signature based on subject and all its dependencies/conflicts
-                # For simplicity, just stringify the depends_on and conflicts_with
-                deps_sig = json.dumps(r.get("depends_on", []), sort_keys=True)
-                confs_sig = json.dumps(r.get("conflicts_with", []), sort_keys=True)
+                # Symmetric conflict signature: A conflicts B == B conflicts A
+                conflicts = r.get("conflicts_with", [])
+                conf_strs = [f"{c.get('type')}::{c.get('name')}::{c.get('version_constraint')}" for c in conflicts]
                 
-                sig = f"{subj_sig} | {deps_sig} | {confs_sig}"
+                # If there is a conflict, sort the subject and conflict strings so direction doesn't matter
+                if conf_strs:
+                    # Assuming 1 conflict for simplicity in this dataset
+                    pair = sorted([subj_str, conf_strs[0]])
+                    sig = f"CONFLICT | {pair[0]} | {pair[1]}"
+                else:
+                    deps = r.get("depends_on", [])
+                    dep_strs = [f"{c.get('type')}::{c.get('name')}::{c.get('version_constraint')}" for c in deps]
+                    # Depends_on is directional
+                    sig = f"REQUIRES | {subj_str} -> {json.dumps(dep_strs)}"
                 
                 if sig in merged_rules:
-                    # Append source document to existing rule to merge provenance
                     existing = merged_rules[sig]
-                    existing["source_doc"] = f"{existing['source_doc']}, {r['source_doc']}"
+                    if r["source_doc"] not in existing["source_doc"]:
+                        existing["source_doc"] = f"{existing['source_doc']}, {r['source_doc']}"
                 else:
                     merged_rules[sig] = r
                     

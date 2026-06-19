@@ -98,7 +98,7 @@ def init_db():
             session.run(
                 """
                 MERGE (r:Rule {rule_id: $rule_id})
-                SET r.rule_type = $rule_type, r.source_doc = $source_doc, r.confidence = $confidence
+                SET r.rule_type = $rule_type, r.source_doc = $source_doc, r.confidence = $confidence, r.degrades_silently_if_unmet = $degrades_silently_if_unmet
                 """, **rule
             )
             
