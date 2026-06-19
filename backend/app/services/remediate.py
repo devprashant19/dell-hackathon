@@ -14,12 +14,15 @@ def suggest_remediation(violation: dict, device_id: str) -> List[Dict[str, Any]]
             # Simulate removing the conflict component
             # Would the score improve? Yes, by the penalty amount.
             # We suggest upgrading to a version that does not conflict.
+            script = f"# Auto-generated Remediation Script for {device_id}\n# Action: UPGRADE_OR_DOWNGRADE\n# Component: {target_comp}\n\nWrite-Host 'Resolving conflict for {target_comp} v{target_version}...'\n# Invoke-WebRequest -Uri 'https://internal.repo/{target_comp.replace(' ', '_')}_safe_version.exe' -OutFile 'C:\\temp\\installer.exe'\nWrite-Host 'Executing silent install...'\n# Start-Process -FilePath 'C:\\temp\\installer.exe' -ArgumentList '/S' -Wait -NoNewWindow\nWrite-Host 'Conflict resolved. Please verify telemetry.'\n"
+            
             remediations.append({
                 "action": "UPGRADE_OR_DOWNGRADE",
                 "component": target_comp,
                 "target_version": "Version that does not match the conflict constraint",
                 "impact": "Low - Resolves the conflict path directly.",
-                "simulated_score_after": f"+{violation.get('penalty', 40)} points"
+                "simulated_score_after": f"+{violation.get('penalty', 40)} points",
+                "script": script
             })
             
         elif v_type == "MISSING_REQUIREMENT" or v_type == "DEGRADED_PERFORMANCE":
@@ -47,12 +50,15 @@ def suggest_remediation(violation: dict, device_id: str) -> List[Dict[str, Any]]
                 impact = "Medium - No secondary conflicts detected in simulation."
                 sim_score = f"+{violation.get('penalty', 30)} points"
                 
+            script = f"# Auto-generated Remediation Script for {device_id}\n# Action: INSTALL_OR_UPGRADE\n# Component: {target_comp}\n# Version: {expected_ver}\n\nWrite-Host 'Downloading {target_comp} v{expected_ver}...'\n# Invoke-WebRequest -Uri 'https://internal.repo/{target_comp.replace(' ', '_')}_{expected_ver}.exe' -OutFile 'C:\\temp\\installer.exe'\nWrite-Host 'Executing silent install...'\n# Start-Process -FilePath 'C:\\temp\\installer.exe' -ArgumentList '/S' -Wait -NoNewWindow\nWrite-Host 'Installation complete. Please verify telemetry.'\n"
+                
             remediations.append({
                 "action": "INSTALL_OR_UPGRADE",
                 "component": target_comp,
                 "target_version": expected_ver,
                 "impact": impact,
-                "simulated_score_after": sim_score
+                "simulated_score_after": sim_score,
+                "script": script
             })
             
     return remediations
